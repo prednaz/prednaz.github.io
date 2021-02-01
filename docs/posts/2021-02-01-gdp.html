@@ -1,44 +1,36 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!doctype html>
+<html lang="en">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="author" content="@katychuang" />
-        <meta name="viewport" content="width=device-width" />
-        <meta http-equiv="Cache-Control" content="max-age=86400, must-revalidate" />
-        <title>Hakyll CSS Garden</title>
-        <script src="../css/jquery.js"></script>
-        <script src="../css/selectfile.js"></script>
-        <link rel="stylesheet" type="text/css" title="hakyll_theme" href="../css/theprofessional.css" />
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Hakyll Blog - a trick from Matt Noonan's Ghosts of Departed Proofs</title>
+        <link rel="stylesheet" href="../css/default.css" />
     </head>
     <body>
-      <div class="highbar">&nbsp;</div>
-        <div id="header">
-          <div class="box">
-            <div id="logo" class="name">
-              <h2><a href="../">rednaZ</a></h2>
+        <header>
+            <div class="logo">
+                <a href="../">My Hakyll Blog</a>
             </div>
-            <div id="navigation" class="pageslinks">
-              <nav class="menuNav">
-                <div class="menuItems">
-                <a href="../" class="posts/2021-02-01-gdp.md">Home</a>
-                <a href="../about.html" class="posts/2021-02-01-gdp.md">About</a>
-                <a href="../archive.html" class="posts/2021-02-01-gdp.md">Archives</a>
-                </div>
-              </nav>
-            </div>
-        </div>
-        </div>
-        <div class="container-gallery">
-        <div id="content" class="inside">
-            <div class="info">
-    Posted on February  1, 2021
-    
-        by Philipp Zander
-    
-</div>
+            <nav>
+                <a href="../">Home</a>
+                <a href="../about.html">About</a>
+                <a href="../contact.html">Contact</a>
+                <a href="../archive.html">Archive</a>
+            </nav>
+        </header>
 
-<p>The violation of preconditions causes a large majority of cases of incorrect semantics including run time errors. Matt Noonan’s paper “Ghosts of Departed Proofs” describes a technique to design library APIs leveraging the type system to ensure that any preconditions are satisfied.</p>
+        <main role="main">
+            <h1>a trick from Matt Noonan's Ghosts of Departed Proofs</h1>
+            <article>
+    <section class="header">
+        Posted on February  1, 2021
+        
+            by Philipp Zander
+        
+    </section>
+    <section>
+        <p>The violation of preconditions causes a large majority of cases of incorrect semantics including run time errors. Matt Noonan’s paper “Ghosts of Departed Proofs” describes a technique to design library APIs leveraging the type system to ensure that any preconditions are satisfied.</p>
 <p>Consider a Haskell library providing a type <code class="sourceCode haskell"><span class="dt">Map</span> key value</code> representing an immutable finite map (sometimes called a dictionary) from keys of type <code class="sourceCode haskell">key</code> to values of type <code class="sourceCode haskell">value</code>. This library would provide functions to insert key value pairs and a function <code class="sourceCode haskell"><span class="fu">lookup</span></code> which is specified to lookup the value at a key in the map if the key is in the map.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="co">-- | Lookup the value at a key in the map if the key is in the map.</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="fu">lookup</span> <span class="ot">::</span></span>
@@ -114,17 +106,16 @@
 <span id="cb5-11"><a href="#cb5-11" aria-hidden="true"></a>    <span class="dt">Just</span> membershipProof <span class="ot">-&gt;</span> <span class="fu">lookup</span> key2 <span class="fu">map</span> membershipProof</span></code></pre></div>
 <p>Sure, we are using <code class="sourceCode haskell">membershipProof</code> of type <code class="sourceCode haskell"><span class="dt">Member</span> keyName1 <span class="fu">map</span></code> where the type <code class="sourceCode haskell"><span class="dt">Member</span> keyName2 <span class="fu">map</span></code> is expected. But <code class="sourceCode haskell">keyName1</code> and <code class="sourceCode haskell">keyName2</code> are type variables. They can they can unify.</p>
 <blockquote>
-<p>Sorry, I did not manage to finish this post yet.</p>
+<p>Sorry, I did not manage to finish this paper yet.</p>
 </blockquote>
+    </section>
+</article>
 
-        </div>
-        </div>
-        <div id="footer">
-          <div class="inside">
+        </main>
+
+        <footer>
             Site proudly generated by
-            <a href="http://jaspervdj.be/hakyll">Hakyll</a>.
-            This theme was designed by <a href="http://twitter.com/katychuang">Dr. Kat</a> and showcased in the <a href="http://katychuang.com/hakyll-cssgarden/gallery/">Hakyll-CSSGarden</a>
-          </div>
-        </div>
+            <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+        </footer>
     </body>
 </html>

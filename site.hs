@@ -2,7 +2,6 @@
 {-# LANGUAGE OverloadedStrings #-}
 import           Data.Monoid (mappend)
 import           Hakyll
-import 			 Control.Applicative
 
 
 --------------------------------------------------------------------------------
@@ -16,10 +15,10 @@ main = hakyllWith (defaultConfiguration {destinationDirectory = "docs"}) $ do
         route   idRoute
         compile compressCssCompiler
 
-    match (fromList ["about.md"]) $ do
+    match (fromList ["about.md", "contact.md"]) $ do
         route   $ setExtension "html"
         compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/default.html" siteCtx
+            >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
 
     match "posts/*" $ do
@@ -36,7 +35,7 @@ main = hakyllWith (defaultConfiguration {destinationDirectory = "docs"}) $ do
             let archiveCtx =
                     listField "posts" postCtx (return posts) `mappend`
                     constField "title" "Archives"            `mappend`
-                    siteCtx
+                    defaultContext
 
             makeItem ""
                 >>= loadAndApplyTemplate "templates/archive.html" archiveCtx
@@ -50,30 +49,18 @@ main = hakyllWith (defaultConfiguration {destinationDirectory = "docs"}) $ do
             posts <- recentFirst =<< loadAll "posts/*"
             let indexCtx =
                     listField "posts" postCtx (return posts) `mappend`
-                    constField "title" "Home"                `mappend`
-                    siteCtx
+                    defaultContext
 
             getResourceBody
                 >>= applyAsTemplate indexCtx
                 >>= loadAndApplyTemplate "templates/default.html" indexCtx
                 >>= relativizeUrls
 
-    match "templates/*" $ compile templateCompiler
+    match "templates/*" $ compile templateBodyCompiler
 
 
 --------------------------------------------------------------------------------
 postCtx :: Context String
 postCtx =
     dateField "date" "%B %e, %Y" `mappend`
-    siteCtx
-
-siteCtx :: Context String
-siteCtx = 
-	activeClassField `mappend`
-	defaultContext
-
--- https://groups.google.com/forum/#!searchin/hakyll/if$20class/hakyll/WGDYRa3Xg-w/nMJZ4KT8OZUJ 
-activeClassField :: Context a 
-activeClassField = functionField "activeClass" $ \[p] _ -> do 
-	path <- toFilePath <$> getUnderlying 
-	return $ if path == p then "active" else path 
+    defaultContext
