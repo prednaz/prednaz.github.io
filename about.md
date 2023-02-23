@@ -1,13 +1,12 @@
 ---
-title: About
+title: about
+lang: en
 ---
 
-I am interested in programming languages like Haskell, turning bugs
-into type errors, and formal verification. I am studying informatics
-at the Ludwig-Maximilians-Universität München. I have been developing
-in Haskell as a working student at Franka Emika for half a year.
+informatics student, interested in programming languages like Haskell, turning bugs into type errors, making illegal states unrepresentable
 
-- [GitLab](https://gitlab.com/rdnz)
-- [GitHub](https://github.com/prednaz) and [alternative GitHub](https://github.com/lmu-ffp-sose-2020-secret-hitler)
-- [Twitter](https://twitter.com/r3dnaz)
+- [gitlab](https://gitlab.com/rdnz)
+- [github](https://github.com/prednaz) and [one github organization](https://github.com/lmu-ffp-sose-2020-secret-hitler)
 - [reddit](https://www.reddit.com/user/r3dnaz)
+- [twitter](https://twitter.com/r3dnaz)
+- [gitlab.haskell.org](https://gitlab.haskell.org/zander)
