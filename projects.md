@@ -21,15 +21,15 @@ lang: en
 
 [G-machine compiler and emulator](https://f-interpreter.de.cool/)
 
-: compiler and emulator of a G-machine loosely based on [*Implementing functional languages: a tutorial*](https://www.microsoft.com/en-us/research/publication/implementing-functional-languages-a-tutorial) by simon peyton jones and david lester. this is a teaching aid for a practical bachelor course loosely based on the mentioned book. my friend zhu yang implemented the business logic and i added the GHCJS powered web user interface in [this repository](https://github.com/yang-zhu/fin/tree/script_version_web). we collaborated on [a test suite for student submissions](https://gitlab.com/rdnz/g-machine/-/blob/main/test/Spec.hs) too. [this repository](https://gitlab.com/rdnz/g-machine/-/tree/web) contains [an uglier version](https://g-machine.de.cool/) of the same teaching aid too, which i had built on my own before.
-
-[secret hitler game clone](https://github.com/lmu-ffp-sose-2020-secret-hitler/secret-hitler#readme)
-
-: multiplayer online turn based game clone of [secret hitler](https://www.secrethitler.com/) using GHC and GHCJS.
+: compiler and emulator of a G-machine loosely based on [*Implementing functional languages: a tutorial*](https://www.microsoft.com/en-us/research/publication/implementing-functional-languages-a-tutorial) by simon peyton jones and david lester. this is a teaching aid for a practical bachelor course loosely based on the mentioned book. my friend zhu yang and i built it using GHCJS in [this repository](https://github.com/yang-zhu/fin/tree/script_version_web). we created [a test suite for student submissions](https://gitlab.com/rdnz/g-machine/-/blob/main/test/Spec.hs) too. [this repository](https://gitlab.com/rdnz/g-machine/-/tree/web) contains [an uglier version](https://g-machine.de.cool/) of the same teaching aid too, which i had built on my own before.
 
 [parser combinator library](https://gitlab.com/rdnz/parser-combinators-rednaz)
 
 : draft of a parser combinator library with better error information than any library i know. look at [the tests](https://gitlab.com/rdnz/parser-combinators-rednaz/-/blob/main/test/Main.hs) for some examples.
+
+[secret hitler game clone](https://github.com/lmu-ffp-sose-2020-secret-hitler/secret-hitler#readme)
+
+: multiplayer online turn based game clone of [secret hitler](https://www.secrethitler.com/) built with a friend using GHC and GHCJS
 
 [playing with fire game clone](https://gitlab.com/rdnz/javascript-game/-/tree/master/project#playing-with-fire)
 
