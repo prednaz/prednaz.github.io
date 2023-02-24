@@ -3,18 +3,22 @@ title: projects
 lang: en
 ---
 
-## [illiterate programming](https://gitlab.com/rdnz/illiterate-programming##illiterate-programming)
+[illiterate programming](https://gitlab.com/rdnz/illiterate-programming#illiterate-programming)
 
-a different take on [literate programming](https://en.wikipedia.org/wiki/Literate_programming)
+: a different take on [literate programming](https://en.wikipedia.org/wiki/Literate_programming)
 
-## [parser combinator library](https://gitlab.com/rdnz/parser-combinators-rednaz)
+[bachelor thesis on *Checked Exceptions in Haskell*](https://gitlab.com/rdnz/checked-exceptions-thesis/-/raw/thesis/thesis/thesis.pdf)
 
-the draft of a parser combinator library with better error information than any library i know. look at [the tests](https://gitlab.com/rdnz/parser-combinators-rednaz/-/blob/main/test/Main.hs) for some examples.
+: [the repository](https://gitlab.com/rdnz/checked-exceptions-thesis) happens to be a usage example of [illiterate programming](https://gitlab.com/rdnz/illiterate-programming#illiterate-programming).
 
-## [bachelor thesis *Checked Exceptions in Haskell*](https://gitlab.com/rdnz/checked-exceptions-thesis/-/raw/thesis/thesis/thesis.pdf)
+[parser combinator library](https://gitlab.com/rdnz/parser-combinators-rednaz)
 
-## [cabal template](https://gitlab.com/rdnz/cabal-template)
+: the draft of a parser combinator library with better error information than any library i know. look at [the tests](https://gitlab.com/rdnz/parser-combinators-rednaz/-/blob/main/test/Main.hs) for some examples.
 
-the `cabal init` default template slightly adjusted to my personal preferences including [a custom prelude](https://gitlab.com/rdnz/cabal-template/-/blob/main/src/Std.hs)
+[cabal template](https://gitlab.com/rdnz/cabal-template)
 
-## [talk on a paper on avoiding partial functions](https://www.youtube.com/watch?v=QmHAgkqKIUg)
+: the `cabal init` default template slightly adjusted to my personal preferences including [a custom prelude](https://gitlab.com/rdnz/cabal-template/-/blob/main/src/Std.hs)
+
+[talk on a paper on avoiding partial functions](https://www.youtube.com/watch?v=QmHAgkqKIUg)
+
+: with [slides](posts/2021-03-08-gdp_talk.html) and [blog post](posts/2021-02-01-gdp.html)
