@@ -1,3 +1,4 @@
+<?php include "/home/webpages/lima-city/rednaz/html/log.php" ?>
 <!doctype html>
 <html lang="en">
     <head>
@@ -15,8 +16,8 @@
             </div>
             <nav>
                 <a href="/">home</a>
-                <a href="/about.html">about</a>
-                <a href="/projects.html">projects</a>
+                <a href="/about.php">about</a>
+                <a href="/projects.php">projects</a>
             </nav>
         </header>
 

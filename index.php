@@ -13,4 +13,4 @@ title: home
 <h2>posts</h2>
 $partial("templates/post-list.html")$
 
-<p>…or you can find more in the <a href="/archive.html">archives</a>.</p>
+<p>…or you can find more in the <a href="/archive.php">archives</a>.</p>

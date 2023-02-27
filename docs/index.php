@@ -1,10 +1,11 @@
+<?php include "/home/webpages/lima-city/rednaz/html/log.php" ?>
 <!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>philipp - Archives</title>
+        <title>philipp - home</title>
         <link rel="stylesheet" href="./css/pandoc_syntax.css" />
         <link rel="stylesheet" href="./css/default.css" />
     </head>
@@ -15,26 +16,36 @@
             </div>
             <nav>
                 <a href="./">home</a>
-                <a href="./about.html">about</a>
-                <a href="./projects.html">projects</a>
+                <a href="./about.php">about</a>
+                <a href="./projects.php">projects</a>
             </nav>
         </header>
 
         <main role="main">
-            <h1>Archives</h1>
-            Here you can find all my previous posts:
+            <h1>home</h1>
+            <h2>welcome</h2>
+
+<img src="./images/haskell-logo.png" style="float: right; margin: 10px;" />
+
+<p>Welcome to my blog!</p>
+
+<p>I've reproduced a list of recent posts here for your reading pleasure:</p>
+
+<h2>posts</h2>
 <ul>
     
         <li>
-            <a href="./posts/2021-03-08-gdp_talk.html">talk on Matt Noonan's Ghosts of Departed Proofs</a> - March  8, 2021
+            <a href="./posts/2021-03-08-gdp_talk.php">talk on Matt Noonan's Ghosts of Departed Proofs</a> - March  8, 2021
         </li>
     
         <li>
-            <a href="./posts/2021-02-01-gdp.html">a trick from Matt Noonan's Ghosts of Departed Proofs</a> - February  1, 2021
+            <a href="./posts/2021-02-01-gdp.php">a trick from Matt Noonan's Ghosts of Departed Proofs</a> - February  1, 2021
         </li>
     
 </ul>
 
+
+<p>…or you can find more in the <a href="./archive.php">archives</a>.</p>
 
         </main>
 

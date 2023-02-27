@@ -1,3 +1,4 @@
+<?php include "/home/webpages/lima-city/rednaz/html/log.php" ?>
 <!doctype html>
 <html lang="en">
     <head>
@@ -15,8 +16,8 @@
             </div>
             <nav>
                 <a href="./">home</a>
-                <a href="./about.html">about</a>
-                <a href="./projects.html">projects</a>
+                <a href="./about.php">about</a>
+                <a href="./projects.php">projects</a>
             </nav>
         </header>
 
@@ -33,7 +34,7 @@
 </dd>
 <dt><a href="https://www.youtube.com/watch?v=QmHAgkqKIUg">talk on a paper on avoiding partial functions</a></dt>
 <dd>
-<p>with <a href="posts/2021-03-08-gdp_talk.html">slides</a>, <a href="https://gitlab.com/rdnz/ghosts-proofs-map">code repository</a>, and <a href="posts/2021-02-01-gdp.html">blog post</a></p>
+<p>with <a href="posts/2021-03-08-gdp_talk.php">slides</a>, <a href="https://gitlab.com/rdnz/ghosts-proofs-map">code repository</a>, and <a href="posts/2021-02-01-gdp.php">blog post</a></p>
 </dd>
 <dt><a href="https://gitlab.com/rdnz/cabal-template">cabal template</a></dt>
 <dd>

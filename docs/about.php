@@ -1,3 +1,4 @@
+<?php include "/home/webpages/lima-city/rednaz/html/log.php" ?>
 <!doctype html>
 <html lang="en">
     <head>
@@ -15,8 +16,8 @@
             </div>
             <nav>
                 <a href="./">home</a>
-                <a href="./about.html">about</a>
-                <a href="./projects.html">projects</a>
+                <a href="./about.php">about</a>
+                <a href="./projects.php">projects</a>
             </nav>
         </header>
 
@@ -24,7 +25,7 @@
             <h1>about</h1>
             <p>informatics master student, interested in programming languages like haskell, turning bugs into type errors, making illegal states unrepresentable</p>
 <ul>
-<li><a href="projects.html">projects</a></li>
+<li><a href="projects.php">projects</a></li>
 <li><a href="https://www.reddit.com/user/r3dnaz">reddit</a></li>
 <li><a href="https://twitter.com/r3dnaz">twitter</a></li>
 <li><a href="https://gitlab.com/rdnz">gitlab</a></li>

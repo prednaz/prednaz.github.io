@@ -13,7 +13,7 @@ lang: en
 
 [talk on a paper on avoiding partial functions](https://www.youtube.com/watch?v=QmHAgkqKIUg)
 
-: with [slides](posts/2021-03-08-gdp_talk.html), [code repository](https://gitlab.com/rdnz/ghosts-proofs-map), and [blog post](posts/2021-02-01-gdp.html)
+: with [slides](posts/2021-03-08-gdp_talk.php), [code repository](https://gitlab.com/rdnz/ghosts-proofs-map), and [blog post](posts/2021-02-01-gdp.php)
 
 [cabal template](https://gitlab.com/rdnz/cabal-template)
 

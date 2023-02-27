@@ -1,3 +1,4 @@
+<?php include "/home/webpages/lima-city/rednaz/html/log.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -16,19 +16,19 @@ main = hakyllWith (defaultConfiguration {destinationDirectory = "docs"}) $ do
         compile compressCssCompiler
 
     match (fromList ["about.md", "projects.md"]) $ do
-        route   $ setExtension "html"
+        route   $ setExtension "php"
         compile $ pandocCompiler
-            >>= loadAndApplyTemplate "templates/default.html" defaultContext
+            >>= loadAndApplyTemplate "templates/default.php" defaultContext
             >>= relativizeUrls
 
     match "posts/*" $ do
-        route $ setExtension "html"
+        route $ setExtension "php"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
-            >>= loadAndApplyTemplate "templates/default.html" postCtx
+            >>= loadAndApplyTemplate "templates/default.php" postCtx
             >>= relativizeUrls
 
-    create ["archive.html"] $ do
+    create ["archive.php"] $ do
         route idRoute
         compile $ do
             posts <- recentFirst =<< loadAll "posts/*"
@@ -39,11 +39,11 @@ main = hakyllWith (defaultConfiguration {destinationDirectory = "docs"}) $ do
 
             makeItem ""
                 >>= loadAndApplyTemplate "templates/archive.html" archiveCtx
-                >>= loadAndApplyTemplate "templates/default.html" archiveCtx
+                >>= loadAndApplyTemplate "templates/default.php" archiveCtx
                 >>= relativizeUrls
 
 
-    match "index.html" $ do
+    match "index.php" $ do
         route idRoute
         compile $ do
             posts <- recentFirst =<< loadAll "posts/*"
@@ -53,7 +53,7 @@ main = hakyllWith (defaultConfiguration {destinationDirectory = "docs"}) $ do
 
             getResourceBody
                 >>= applyAsTemplate indexCtx
-                >>= loadAndApplyTemplate "templates/default.html" indexCtx
+                >>= loadAndApplyTemplate "templates/default.php" indexCtx
                 >>= relativizeUrls
 
     match "templates/*" $ compile templateBodyCompiler
